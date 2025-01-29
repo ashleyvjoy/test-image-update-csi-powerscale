@@ -17,7 +17,8 @@ on:  # yamllint disable-line rule:truthy
 jobs:
   # go version update
   go-version-update:
-    uses: dell/common-github-actions/.github/workflows/go-version-workflow.yaml@update-img-version
-    name: Image Version Update
+    uses: dell/common-github-actions/.github/workflows/image-version-workflow.yaml@update-img-version
+    with:
+      version: "minor"
     secrets: inherit
 
